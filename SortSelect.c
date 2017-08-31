@@ -10,14 +10,20 @@ void SelectSort(int arr[],int len)
 {
 	int i,j;
 	int temp;
+	int max;
 	for(i=0;i<len-1;i++)
+	{
+		max=i;
 		for(j=i+1;j<len;j++)
-			if(arr[i]<arr[j])
-			{
-				temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=temp;
-			}
+			if(arr[max]<arr[j])
+				max=j;
+		if(max!=i)
+		{
+			temp=arr[i];
+			arr[i]=arr[max];
+			arr[max]=temp;
+		}
+	}
 }
 
 int main(void)
