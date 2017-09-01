@@ -7,6 +7,7 @@ date: 2017-09-01
 #include <stdio.h>
 
 //寻找第一个元素正确位置
+//其左边比他小，右边比他大
 int FindPos(int arr[],int low,int high)
 {
 	int val=arr[low];
