@@ -1,5 +1,5 @@
 /*
-桶排序
+计数排序
 bug: 负数
 author: stg20160101
 date: 2017-09-02
@@ -7,7 +7,7 @@ date: 2017-09-02
 
 #include <stdio.h>
 
-//桶排序
+//计数排序
 void BucketSort(int arr[],int len)
 {
 	int max=arr[0];
